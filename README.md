@@ -1,6 +1,8 @@
 #Da Vinci Environment plugin for ZeroBrane Studio
 
-This plugin changes the configuration ZeroBrane Studio IDE for the classes taught at the Da Vinci College in Dordrecht, The Netherlands.
+This plugin changes the configuration ZeroBrane Studio IDE for the classes taught at the Da Vinci College in Dordrecht, The Netherlands. It currently makes the following changes.
+
+* Only the interpreters for Lua 5.1 and Löve2d are available.
 
 ##Installing the plugin
 
