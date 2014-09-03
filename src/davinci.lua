@@ -20,13 +20,13 @@ local function disableOutputText()
   end
 
   local _tr = TR
-  TR = function(str)
+  TR = function(msg, count)
     local altered = {
       ["Program starting as '%s'."] = "",
       ["Program '%s' started in '%s' (pid: %d)."] = ""
     }
 
-    return altered[str] or _tr(str)
+    return altered[msg] or _tr(msg, count)
   end
 end
 
