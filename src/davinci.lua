@@ -23,7 +23,10 @@ local function disableOutputText()
   TR = function(msg, count)
     local altered = {
       ["Program starting as '%s'."] = "",
-      ["Program '%s' started in '%s' (pid: %d)."] = ""
+      ["Program '%s' started in '%s' (pid: %d)."] = "",
+      ["Debugger server started at %s:%d."] = "",
+      ["Debugging session started in '%s'."] = "",
+      ["Debugging session completed (%s)."] = ""
     }
 
     return altered[msg] or _tr(msg, count)
