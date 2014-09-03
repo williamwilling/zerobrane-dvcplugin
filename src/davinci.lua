@@ -30,6 +30,10 @@ local function disableOutputText()
   end
 end
 
+local function runOnDebug()
+  ide.config.debugger.runonstart = true
+end
+
 return {
   name = "Da Vinci Environment plugin",
   description = "Sets up ZeroBrane Studio for use in the classes taught at the Da Vinci College in Dordrecht, The Netherlands.",
@@ -39,5 +43,6 @@ return {
   onRegister = function (self)
     removeInterpreters()    -- Only show the interpreters we actually use.
     disableOutputText()     -- When you run your program, you should see only the text your program generates and not some preamble.
+    runOnDebug()            -- Debugging your program should run immediately and not break on the first line.
   end
 }
